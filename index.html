@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Multicola</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<div class="contenedor">
+		<div class="informacion">
+			<div class="multicola">
+				<div class="ejecucion">
+					<h3>Sección crítica</h3>
+					<table>
+						<tr><td colspan="2">Tiempo <span id="timer">0</span> s</td></tr>
+						<tr id="proceso-actual">
+							<td>Proceso</td>
+							<td>Rafaga</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="control">
+					<button id="iniciar">Iniciar</button>
+					<button id="parar">Parar</button>
+					<button id="bloquear">Bloquear</button>
+					<button id="agregar1">Agregar RR</button>
+					<button id="agregar2">Agregar SJF</button>
+					<button id="agregar3">Agregar FCFS</button>
+				</div>
+
+				<div class="colas">
+					<div class="robin">
+						<table>
+							<h3>Round Robin</h3>
+							<thead>
+								<tr>
+									<th>PID</th>
+									<th>Prioridad</th>
+									<th>Llegada</th>
+									<th>Rafaga</th>
+								</tr>
+							</thead>
+							<tbody id="robin"></tbody>
+						</table>
+					</div>
+
+					<div class="sjf">
+						<table>
+							<h3>SJF</h3>
+							<thead>
+								<tr>
+									<th>PID</th>
+									<th>Prioridad</th>
+									<th>Llegada</th>
+									<th>Rafaga</th>
+								</tr>
+							</thead>
+							<tbody id="sjf"></tbody>
+						</table>
+					</div>
+
+					<div class="fcfs">
+						<table>
+							<h3>FCFS</h3>
+							<thead>
+								<tr>
+									<th>PID</th>
+									<th>Prioridad</th>
+									<th>Llegada</th>
+									<th>Rafaga</th>
+								</tr>
+							</thead>
+							<tbody id="fcfs"></tbody>
+						</table>
+					</div>
+
+					<div class="bloqueados">
+						<table>
+							<h3>Bloqueados</h3>
+							<thead>
+								<tr>
+									<th>PID</th>
+									<th>Prioridad</th>
+									<th>Llegada</th>
+									<th>Rafaga</th>
+								</tr>
+							</thead>
+							<tbody id="bloqueados"></tbody>
+						</table>
+					</div>
+
+					<div class="terminados">
+						<table>
+							<h3>Terminados</h3>
+							<thead>
+								<tr>
+									<th>PID</th>
+									<th>Prioridad</th>
+									<th>Llegada</th>
+									<th>Rafaga</th>
+								</tr>
+							</thead>
+							<tbody id="terminados"></tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<div class="tabla-cal">
+				<h3>Tabla de cálculos</h3>
+				<div class="calculos">
+					<table>
+						<thead>
+							<tr>
+								<th>PID</th>
+								<th>Prioridad</th>
+								<th>Llegada</th>
+								<th>Rafaga</th>
+								<th>Comienzo</th>
+								<th>Final</th>
+								<th>Retorno</th>
+								<th>Espera</th>
+								<th>Estado</th>
+							</tr>
+						</thead>
+						<tbody id="calculos"></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<div class="diagrama-gantt">
+			<h3>Diagrama de Gantt</h3>
+			<div class="diagrama">
+				<table>
+					<thead>
+						<tr id="timeline">
+							<th>PID</th>
+						</tr>
+					</thead>
+					<tbody id="gantt"></tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Scripts -->
+	<script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
+	<script src="js/proceso.js" type="text/javascript"></script>
+	<script src="js/nodo.js" type="text/javascript"></script>
+	<script src="js/cola.js" type="text/javascript"></script>
+	<script src="js/procesador.js" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>

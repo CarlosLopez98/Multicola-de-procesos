@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+    font-size: 16px;
+    color: rgb(22, 101, 167);
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+}
+
+table tr th, table tr td{
+    border-bottom: 1px solid rgb(99, 99, 99);
+}
+
+.contenedor {
+    width: 100%;
+    height: auto;
+    background-color: #fafafa;
+    float: left;
+}
+
+.informacion {
+    width: 100%;
+    float: left;
+}
+
+.multicola {
+    width: 50%;
+    float: left;
+}
+
+.ejecucion {
+    width: 48%;
+    min-height: 75px;
+    padding: 5px;
+    margin: 1%;
+    border: 1px solid rgb(99, 99, 99);
+    border-radius: 5px;
+    float: left;
+}
+
+.control {
+    width: 48%;
+    min-height: 75px;
+    padding: 5px;
+    margin: 1%;
+    border: 1px solid rgb(99, 99, 99);
+    border-radius: 5px;
+    float: left;
+}
+
+.control button {
+    width: 31.33%;
+    height: 26px;
+    margin: 1%;
+    border: 1px solid rgb(99, 99, 99);
+    border-radius: 3px;
+    float: left;
+}
+
+#iniciar {
+    background-color: #76dd63;
+}
+
+#iniciar:hover {
+    cursor: pointer;
+    background-color: #54ad44;
+}
+
+#parar {
+    background-color: #dbdd63;
+}
+
+#parar:hover {
+    cursor: pointer;
+    background-color: #ada644;
+}
+
+#bloquear {
+    background-color: #dd6363;
+}
+
+#bloquear:hover {
+    cursor: pointer;
+    background-color: #ad4444;
+}
+
+#agregar1, #agregar2, #agregar3 {
+    background-color: #63d5dd;
+}
+
+#agregar1:hover, #agregar2:hover, #agregar3:hover {
+    cursor: pointer;
+    background-color: #44a6ad;
+}
+
+.colas {
+    width: 100%;
+    float: left;
+}
+
+.robin {
+    width: 31.33%;
+    min-height: 100px;
+    max-height: 100px;
+    padding: 10px;
+    margin: 1%;
+    border: 1px solid rgb(99, 99, 99);
+    border-radius: 3px;
+    float: left;
+    overflow-y: auto;
+}
+
+.sjf {
+    width: 31.33%;
+    min-height: 100px;
+    max-height: 100px;
+    padding: 10px;
+    margin: 1%;
+    border: 1px solid rgb(99, 99, 99);
+    border-radius: 3px;
+    float: left;
+    overflow-y: auto;
+}
+
+.fcfs {
+    width: 31.33%;
+    min-height: 100px;
+    max-height: 100px;
+    padding: 10px;
+    margin: 1%;
+    border: 1px solid rgb(99, 99, 99);
+    border-radius: 3px;
+    float: left;
+    overflow-y: auto;
+}
+
+.bloqueados {
+    width: 48%;
+    min-height: 100px;
+    max-height: 100px;
+    padding: 10px;
+    margin: 1%;
+    border: 1px solid rgb(99, 99, 99);
+    border-radius: 3px;
+    float: left;
+    overflow-y: auto;
+}
+
+.terminados {
+    width: 48%;
+    min-height: 100px;
+    max-height: 100px;
+    padding: 10px;
+    margin: 1%;
+    border: 1px solid rgb(99, 99, 99);
+    border-radius: 3px;
+    float: left;
+    overflow-y: auto;
+}
+
+.tabla-cal {
+    width: 48%;
+    padding: 10px;
+    margin: 1%;
+    border: 1px solid rgb(99, 99, 99);
+    border-radius: 3px;
+    float: left;
+}
+
+.tabla-cal .calculos {
+    min-height: 256px;
+    max-height: 256px;
+    overflow-y: auto;
+}
+
+.diagrama-gantt {
+    width: 98%;
+    padding: 10px;
+    margin: 0 1%;
+    border: 1px solid rgb(99, 99, 99);
+    border-radius: 3px;
+    float: left;
+}
+
+.diagrama-gantt .diagrama {
+    min-height: 280px;
+    max-height: 280px;
+    overflow: auto;
+}
+
+#timeline th, #gantt td {
+    width: 20px;
+    min-width: 20px;
+    max-width: 20px;
+}
+
+#gantt td {
+    border: none;
+}
+
+.esperando {background-color: #3AC5D5;}
+.ejecutando {background-color: #51D53A;}
+.bloqueado {background-color: #EA1919;}
+.suspendido {background-color: #E5D92D;}
+
+.Esperando {color: #3AC5D5; font-weight: 500;}
+.Ejecutando {color: #51D53A; font-weight: 500;}
+.Bloqueado {color: #EA1919; font-weight: 500;}
+.Suspendido {color: #E5D92D; font-weight: 500;}
+.Terminado {color: #994095; font-weight: 500;}
